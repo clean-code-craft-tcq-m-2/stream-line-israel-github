@@ -24,9 +24,6 @@ jobs:
     - name: run
       run: ./testchecker
 
-    - name: run receiver
-      run: ./receiver
-
     - name: run integration pipe cmd
       run:  ./testchecker | ./receiver
 
