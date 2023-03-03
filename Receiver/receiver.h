@@ -2,7 +2,8 @@
 #define RECEIVER_H
 #include "senderInputHandler.h"
 #include "statistics.h"
-#include "map"
+#include "test_receiver.h"
+#include <map>
 
 static std::vector<int> temperatureMeasurenments;
 static std::vector<int> chargeMeasurenments;

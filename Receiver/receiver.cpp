@@ -28,7 +28,7 @@ std::string formatOutput(std::vector<int> measurenments, measureType type)
 void getReadingsData()
 {
     senderInputHandler inputHandler;
-    //std::vector<std::string> inputmeasurenment = inputHandler.scanDataFromPipe();
+    std::vector<std::string> inputmeasurenment = inputHandler.scanDataFromPipe();
     chargeMeasurenments      = inputHandler.saveBatteryParameters(mock_input, measureType::charge);
     temperatureMeasurenments = inputHandler.saveBatteryParameters(mock_input, measureType::temperature);
 }
@@ -41,6 +41,6 @@ int main()
 
     std::cout << chargeOutputString;
     std::cout << temperatureOutputString;
-
+    runTests();
     return 0;
 }
